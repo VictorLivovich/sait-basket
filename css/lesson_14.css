@@ -1,0 +1,1474 @@
+@charset "UTF-8";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  min-width: 320px;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Proxima Nova Rg";
+  src: url("fonts/subset-ProximaNova-Bold.eot");
+  src: url("fonts/subset-ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/subset-ProximaNova-Bold.woff2") format("woff2"), url("fonts/subset-ProximaNova-Bold.woff") format("woff"), url("fonts/subset-ProximaNova-Bold.ttf") format("truetype"), url("fonts/subset-ProximaNova-Bold.svg#ProximaNova-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Proxima Nova Rg";
+  src: url("fonts/subset-ProximaNova-Regular.eot");
+  src: url("fonts/subset-ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/subset-ProximaNova-Regular.woff2") format("woff2"), url("fonts/subset-ProximaNova-Regular.woff") format("woff"), url("fonts/subset-ProximaNova-Regular.ttf") format("truetype"), url("fonts/subset-ProximaNova-Regular.svg#ProximaNova-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Proxima Nova Lt";
+  src: url("fonts/subset-ProximaNova-Light.eot");
+  src: url("fonts/subset-ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("fonts/subset-ProximaNova-Light.woff2") format("woff2"), url("fonts/subset-ProximaNova-Light.woff") format("woff"), url("fonts/subset-ProximaNova-Light.ttf") format("truetype"), url("fonts/subset-ProximaNova-Light.svg#ProximaNova-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+.header {
+  background: url(../images/header_fon0.png) 0 0px no-repeat;
+  background-size: cover;
+}
+
+.header__fon-contener {
+  max-width: 1530px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__fon-contener-top {
+  max-width: 1530px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 55px;
+}
+
+.header__fon-contener-top-logo {
+  background: url(../images/logo.png) 0 0px no-repeat;
+  background-size: cover;
+  width: 189px;
+  height: 33px;
+  display: block;
+  margin-bottom: 314px;
+}
+
+.header__fon-contener-top-text {
+  font-family: "Proxima Nova Rg", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 8px;
+}
+
+.header__fon-contener-main {
+  font-family: "Proxima Nova Rg", sans-serif;
+  font-size: 90px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 95px;
+  position: relative;
+  z-index: 0;
+}
+
+.header__fon-contener-main-line {
+  width: 396px;
+  height: 4px;
+  background: #5e42b0;
+  position: absolute;
+  top: 91px;
+  left: 351px;
+  -webkit-transform: rotateZ(-45deg);
+          transform: rotateZ(-45deg);
+  z-index: -1;
+}
+
+.fon-contener-main2 {
+  text-align: end;
+  margin-bottom: 8px;
+}
+
+.paragraph {
+  font-family: "Proxima Nova Rg", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #7b61c9;
+  text-decoration: none;
+}
+
+.nav__header {
+  max-width: 566px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: auto;
+  margin-bottom: 186px;
+}
+
+.header__fon-contener-btn-contener {
+  width: 676px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 110px;
+}
+
+.header__fon-contener-btn {
+  font-family: "Proxima Nova Rg", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  border-radius: 39px;
+  background-color: #5e42b0;
+  -webkit-box-shadow: 8px 13.856px 24px 0px #0a0e34;
+          box-shadow: 8px 13.856px 24px 0px #0a0e34;
+  width: 311px;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  border: none;
+  position: relative;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding-left: 44px;
+}
+
+.header-btn {
+  font-weight: 700;
+}
+
+.header__fon-contener-btn-before {
+  background: url(../images/apple.png) 0 0px no-repeat;
+  background-size: cover;
+  width: 33px;
+  height: 37px;
+  position: absolute;
+  top: 20px;
+  left: 40px;
+}
+
+.header__fon-contener-btn-before1 {
+  background: url(../images/icon.png) 0 0px no-repeat;
+  background-size: cover;
+  width: 33px;
+  height: 37px;
+  position: absolute;
+  top: 25px;
+  left: 65px;
+}
+
+.sport {
+  overflow: hidden;
+}
+
+.sport__slider2-wrepper {
+  display: none;
+}
+
+.sport__slider-wrepper {
+  display: none;
+}
+
+.sport__contener1-fake {
+  background: #fff;
+  position: relative;
+}
+
+.sport__fon1-fake {
+  background: #f8f4fa;
+}
+
+.sport__fon1-fake2 {
+  background: #5e42b0;
+}
+
+.sport__fake2-fon {
+  background: #0a0e34;
+}
+
+.sport__contener1 {
+  margin-left: 50%;
+  padding-top: 104px;
+  position: relative;
+  margin-top: 30px;
+}
+
+.sport__fon2 {
+  margin-left: 50%;
+  padding-top: 70px;
+}
+
+.sport__fon1 {
+  margin-left: 50%;
+  padding-top: 70px;
+}
+
+.sport__header-besbol {
+  background: url(../images/besbol11.png) 0 0px no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: -6px;
+  left: -708px;
+  width: 696px;
+  height: 950px;
+}
+
+.sport__header {
+  font-family: "Proxima Nova Rg", sans-serif;
+  font-size: 90px;
+  font-weight: 700;
+  color: #e7e7e7;
+  margin-bottom: 78px;
+  text-transform: uppercase;
+}
+
+.sport__contener-litl {
+  float: left;
+}
+
+.sport__contener-litl-namber {
+  font-family: "Proxima Nova Rg", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 3px;
+}
+
+.sport__contener-litl-namber::after {
+  content: "";
+  background: #5e42b0;
+  height: 5px;
+  border-radius: 2px;
+  display: block;
+  opacity: 0.4;
+}
+
+.block-namber::after {
+  content: "";
+  background: #8f7bc8;
+  height: 5px;
+  border-radius: 2px;
+  display: block;
+  opacity: 0.4;
+}
+
+.sport__contener-litl-namber-white {
+  color: #fff;
+}
+
+.sport__contener-litl-namber-white::after {
+  content: "";
+  background: #fff;
+  height: 5px;
+  border-radius: 2px;
+  display: block;
+  opacity: 0.4;
+}
+
+.sport__contener-litl-line {
+  width: 100%;
+  height: 5px;
+  border-radius: 2px;
+}
+
+.sport__contener1-wrepper-connection {
+  font-family: "Proxima Nova Rg", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #c1c1c1;
+  float: left;
+  margin-left: 10px;
+  margin-top: -5px;
+  text-transform: uppercase;
+  padding-bottom: 28px;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.sport__contener1-text {
+  font-family: "Proxima Nova Rg", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: #000;
+  padding-bottom: 62px;
+  padding-right: 100px;
+}
+
+.sport__contener1-text2 {
+  padding-bottom: 100px;
+  color: #fff;
+}
+
+.sport__wrepper-fake {
+  margin-top: 30px;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.sport__contener1-new {
+  width: 682px;
+}
+
+.sport__header-basket {
+  background: url(../images/basket11.png) 0 0px no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: -46px;
+  left: 121px;
+  width: 991px;
+  height: 815px;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.sport__header-new {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.sport__contener1-wrepper-connection-new {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  margin-left: 417px;
+  margin-top: -27px;
+}
+
+.sport__contener1-text-new {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  margin-left: -130px;
+}
+
+.sport__contener-litl-new {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  margin-left: 660px;
+}
+
+.sport__fon1-new {
+  width: 682px;
+}
+
+.sport__contener1-wrepper-connection-new1 {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  margin-left: 353px;
+  margin-top: -30px;
+}
+
+.sport-new2 {
+  margin-left: 492px;
+}
+
+.block__contener {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.block__contener-card1 {
+  background: url(../images/card1.png) 0 0px no-repeat;
+  background-size: cover;
+  width: 960px;
+  height: 730px;
+}
+
+.block__contener-text {
+  width: 960px;
+  position: relative;
+}
+
+.block__contener-text-block {
+  background-color: #5e42b0;
+  width: 168px;
+  height: 155px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 210px;
+  left: -84px;
+}
+
+.block-litl {
+  margin: auto;
+}
+
+.block-namber {
+  font-family: "Proxima Nova Rg", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 32px;
+}
+
+.block__contener-text-header {
+  font-family: "Proxima Nova Rg", sans-serif;
+  font-size: 90px;
+  font-weight: 700;
+  color: #c1c1c1;
+  text-transform: uppercase;
+  margin-top: 243px;
+  margin-left: 128px;
+  margin-bottom: 100px;
+  margin: 243px 0 100px 128px;
+}
+
+.block__contener-text-text {
+  font-family: "Proxima Nova Rg", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  color: #5e42b0;
+  margin-left: 132px;
+  min-width: 360px;
+  min-height: 170px;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.block__contener-text-text-line {
+  border-radius: 2px;
+  background-color: #5e42b0;
+  width: 22px;
+  height: 5px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  margin-top: 20px;
+}
+
+.block__contener-revers {
+  position: relative;
+}
+
+.block__contener-card-revers {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.block__contener-text-revers {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.block__contener-card1-revers {
+  background: url(../images/card2.png) 0 0px no-repeat;
+  background-size: cover;
+  width: 960px;
+  height: 730px;
+  position: relative;
+}
+
+.block__contener-text-block-revers {
+  position: absolute;
+  top: 210px;
+  left: -84px;
+}
+
+.block__contener-text-header-revers {
+  margin-left: 169px;
+  margin-right: 86px;
+}
+
+.block__contener-text-text-revers {
+  margin-left: 173px;
+}
+
+.block__contener-card3 {
+  background: url(../images/card3.png) 0 0px no-repeat;
+  background-size: cover;
+  width: 960px;
+  height: 730px;
+}
+
+.footer {
+  background: url(../images/footer_fon.png) 0 0px no-repeat;
+  background-size: cover;
+  padding-top: 227px;
+}
+
+.foote__top-contener {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 924px;
+  cursor: pointer;
+  margin-bottom: 154px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-logo {
+  background: url(../images/footer__logo.png) 0 0px no-repeat;
+  background-size: cover;
+  width: 142px;
+  height: 146px;
+  border: none;
+  cursor: pointer;
+}
+
+.foote__top-contener-app-header {
+  font-family: "Proxima Nova Rg", sans-serif;
+  font-size: 90px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.foote__top-contener-app-text {
+  font-family: "Proxima Nova Rg", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #a496ca;
+  text-transform: uppercase;
+}
+
+.contener-app-header-line1 {
+  background-color: #9172e6;
+  position: absolute;
+  width: 209px;
+  height: 4px;
+  position: absolute;
+  top: 52px;
+  left: -17px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.contener-app-header-line2 {
+  background-color: #9172e6;
+  position: absolute;
+  width: 417px;
+  height: 4px;
+  position: absolute;
+  top: 64px;
+  left: 258px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.footer__fon-contener-btn-contener {
+  width: 676px;
+  margin-bottom: 82px;
+}
+
+.footer__fon-contener-btn {
+  color: #fff;
+  width: 315px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer__bootom {
+  background-color: #0a0e34;
+  opacity: 0.6;
+  width: 100%;
+}
+
+.footer__fon-contener-top {
+  max-width: 1880px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.footer__fon-contener-top-logo {
+  margin-bottom: 64px;
+}
+
+.footer__bootom-social {
+  width: 146px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slide__icon {
+  font-size: 20px;
+  color: #fff;
+}
+
+@media (max-width: 1530px) {
+  .header {
+    background: url(../images/header1_fon.png) 0 0px no-repeat;
+    background-size: cover;
+  }
+
+  .sport__header-basket {
+    left: -114px;
+    top: 0px;
+  }
+
+  .block__contener {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .block__contener-card {
+    width: 100%;
+    margin-top: -60px;
+  }
+
+  .block__contener-card1 {
+    background: url(../images/card1.png) 0 0px no-repeat;
+    background-size: cover;
+    height: 730px;
+    width: 100%;
+  }
+
+  .block__contener-text {
+    width: 100%;
+  }
+
+  .block__contener-text-block {
+    top: -116px;
+    left: 40px;
+  }
+
+  .block__contener-text-header {
+    margin-left: 35px;
+    margin-top: 74px;
+    margin-bottom: 9px;
+  }
+
+  .block__contener-text-text {
+    margin-left: 37px;
+    margin-right: 60px;
+    min-height: 66px;
+    width: 87%;
+  }
+
+  .block__contener-text-revers {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+
+  .block__contener-text-block-revers {
+    position: absolute;
+  }
+
+  .block__contener-text-block-revers {
+    position: absolute;
+    top: 612px;
+    left: 40px;
+  }
+
+  .block__contener-card1-revers {
+    width: 100%;
+    margin-top: 60px;
+  }
+
+  .block__contener-card3 {
+    width: 100%;
+  }
+
+  .block__contener-text-text {
+    margin-bottom: 66px;
+  }
+
+  .block__contener-card3 {
+    margin-top: 64px;
+  }
+}
+@media (max-width: 1350px) {
+  .sport__header-new {
+    margin-right: 32%;
+  }
+
+  .sport__contener-litl-new {
+    margin-left: 439px;
+  }
+
+  .sport__contener1-wrepper-connection-new {
+    margin-top: -27px;
+  }
+
+  .sport__contener1-wrepper-connection-new {
+    margin-left: 193px;
+  }
+
+  .sport__contener1-text-new {
+    margin-left: -192px;
+    margin-right: 225px;
+  }
+
+  .sport__contener1-wrepper-connection-new1 {
+    margin-left: 136px;
+  }
+
+  .sport-new2 {
+    margin-left: 275px;
+  }
+}
+@media (max-width: 1020px) {
+  .sport__header-basket {
+    background: url(../images/basket211.png) 0 0px no-repeat;
+    background-size: cover;
+    width: 690px;
+    height: 565px;
+    top: 114px;
+    left: -260px;
+  }
+
+  .sport__contener1-new {
+    width: 405px;
+  }
+
+  .sport__contener-litl-new {
+    margin-left: 383px;
+    margin-left: 354px;
+  }
+
+  .sport__contener1-wrepper-connection-new {
+    margin-left: 108px;
+  }
+
+  .sport__contener1-text-new {
+    margin-left: -270px;
+    margin-right: 35px;
+  }
+
+  .sport__contener1-wrepper-connection-new1 {
+    margin-left: 47px;
+  }
+
+  .sport__fon1-new {
+    width: 406px;
+  }
+
+  .sport-new2 {
+    margin-left: 186px;
+  }
+
+  .foote__top-contener-app-header {
+    font-size: 80px;
+  }
+
+  .foote__top-contener-app-text {
+    font-size: 35px;
+  }
+
+  .contener-app-header-line1 {
+    left: -29px;
+  }
+
+  .contener-app-header-line2 {
+    left: 188px;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    background: url(../images/header1_fon.png) 0 0px no-repeat;
+    background-size: cover;
+  }
+
+  .header__fon-contener-top {
+    padding-top: 50px;
+  }
+
+  .header__fon-contener-top-logo {
+    margin-bottom: 182px;
+    margin-left: 15px;
+  }
+
+  .header__fon-contener-top-text {
+    margin-right: 15px;
+  }
+
+  .header__fon-contener-main {
+    margin-left: 85px;
+  }
+
+  .header__fon-contener-main {
+    font-size: 64px;
+    line-height: 80px;
+  }
+
+  .fon-contener-main2 {
+    margin-right: 85px;
+    text-align: start;
+    margin-left: 85px;
+    margin-bottom: 154px;
+  }
+
+  .nav__header {
+    margin-right: auto;
+  }
+
+  .nav__header {
+    margin-bottom: 110px;
+  }
+
+  .header__fon-contener-btn-contener {
+    padding-bottom: 90px;
+  }
+
+  .header__fon-contener-main-line {
+    top: 114px;
+    left: 0px;
+  }
+
+  .sport__header-besbol {
+    background: url(../images/besbol21.png) 0 0px no-repeat;
+    background-size: cover;
+    top: 116px;
+    left: -450px;
+    width: 497px;
+    height: 699px;
+  }
+
+  .sport__header-basket {
+    top: 71px;
+    left: -265px;
+  }
+
+  .sport__contener1-text {
+    padding-right: 156px;
+  }
+
+  .sport__contener1-new {
+    width: 405px;
+  }
+
+  .sport__contener1 {
+    margin-left: 39%;
+  }
+
+  .sport__fon1 {
+    margin-left: 39%;
+  }
+
+  .sport__fon2 {
+    margin-left: 39%;
+  }
+
+  .block__contener-card1 {
+    background: url(../images/card1_2.png) 0 0px no-repeat;
+    background-size: cover;
+    width: 768px;
+    height: 584px;
+  }
+
+  .block__contener-card1-revers {
+    background: url(../images/card2_2.png) 0 0px no-repeat;
+    background-size: cover;
+    width: 768px;
+    height: 584px;
+  }
+
+  .block__contener-card3 {
+    background: url(../images/card3_2.png) 0 0px no-repeat;
+    background-size: cover;
+    width: 768px;
+    height: 584px;
+  }
+
+  .block__contener-text-block-revers {
+    top: 466px;
+    left: 40px;
+  }
+
+  .footer {
+    background: url(../images/footer_fon2.png) 0 0px no-repeat;
+    background-size: auto;
+    background-size: cover;
+  }
+
+  .footer {
+    padding-top: 120px;
+  }
+
+  .foote__top-contener {
+    display: block;
+    margin-bottom: 195px;
+  }
+
+  .foote__top-contener-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .foote__top-contener-app-header {
+    text-align: center;
+  }
+
+  .foote__top-contener-app-text {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .footer-logo {
+    margin-bottom: 80px;
+  }
+
+  .footer__fon-contener-top {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+
+  .footer__fon-contener-btn-contener {
+    margin-bottom: 40px;
+  }
+
+  .footer__fon-contener-top-logo {
+    display: none;
+  }
+
+  .footer__fon-contener-top-text {
+    display: none;
+  }
+
+  .footer__bootom-social {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+
+  .contener-app-header-line1 {
+    left: 38px;
+  }
+
+  .contener-app-header-line2 {
+    left: 262px;
+  }
+}
+@media (max-width: 684px) {
+  .header {
+    background: url(../images/header_fon5.png) 0 0px no-repeat;
+    background-size: cover;
+  }
+
+  .header__fon-contener-top {
+    padding-top: 36px;
+  }
+
+  .header__fon-contener-top-logo {
+    margin-bottom: 132px;
+  }
+
+  .header__fon-contener-top-text {
+    display: none;
+  }
+
+  .header__fon-contener-top-logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header__fon-contener-main {
+    font-size: 32px;
+    line-height: 36px;
+    margin-left: 10px;
+  }
+
+  .fon-contener-main2 {
+    margin-right: 10px;
+    margin-left: 56px;
+  }
+
+  .header__fon-contener-btn {
+    border-radius: 19px;
+    background-color: #5e42b0;
+    -webkit-box-shadow: 0px 10px 16px 0px #0a0e34;
+            box-shadow: 0px 10px 16px 0px #0a0e34;
+    width: 142px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 8px;
+  }
+
+  .header__fon-contener-btn-before {
+    background: url(../images/apple1.png) 0 0px no-repeat;
+    background-size: cover;
+    width: 15px;
+    height: 17px;
+    position: absolute;
+    top: 13px;
+    left: 17px;
+  }
+
+  .header__fon-contener-btn-before1 {
+    background: url(../images/icon1.png) 0 0px no-repeat;
+    background-size: cover;
+    width: 16px;
+    height: 18px;
+    position: absolute;
+    top: 13px;
+    left: 17px;
+  }
+
+  .header__fon-contener-btn-contener {
+    width: 290px;
+  }
+
+  .paragraph {
+    font-size: 12px;
+    margin-right: 10px;
+    line-height: 16px;
+  }
+
+  .nav__header {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 248px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-bottom: -124px;
+  }
+
+  .header__fon-contener-main-line {
+    width: 235px;
+    top: 52px;
+    left: 22px;
+  }
+
+  .fon-contener-main2 {
+    margin-bottom: 192px;
+  }
+
+  .header__fon-contener-btn-contener {
+    padding-bottom: 104px;
+  }
+
+  .sport__slider2-wrepper {
+    display: block;
+  }
+
+  .sport {
+    padding-top: 20px;
+  }
+
+  .sport__contener1-fake {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .sport__slider-wrepper {
+    display: block;
+    position: relative;
+  }
+
+  .sport__slider-wrepper-color {
+    position: absolute;
+    width: 100%;
+    width: 100%;
+    height: 367px;
+    background: #f5f4f9;
+    top: 199px;
+  }
+
+  .sport__slider {
+    width: 270px;
+    height: 508px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  }
+
+  .sport__slider-trek {
+    width: 1500px;
+    height: 508px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-width: 0px;
+  }
+
+  .sport__contener1-fake {
+    display: none;
+  }
+
+  .sport__header-besbol-smol {
+    background: url(../images/besbol3.png) 0 0px no-repeat;
+    background-size: cover;
+    width: 211px;
+    height: 281px;
+  }
+
+  .sport__header {
+    font-size: 50px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .sport__contener1-wrepper-connection {
+    font-size: 28px;
+    margin-bottom: -10px;
+  }
+
+  .sport__contener1-text {
+    font-size: 15px;
+  }
+
+  .sport__contener-litl-namber {
+    font-size: 14px;
+  }
+
+  .sport__header-besbol-smol {
+    margin: 0;
+    margin-bottom: 27px;
+  }
+
+  .swiper-pagination {
+    margin-bottom: 28px;
+  }
+
+  .swiper-pagination-bullet-active {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+  }
+
+  .swiper-pagination-bullet {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+  }
+
+  .sport__wrepper-fake, .sport__fon1-fake, .sport__fon1-fake2 {
+    display: none;
+  }
+
+  .sport__slider2-trek {
+    width: 1500px;
+    height: 430px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-width: 0px;
+  }
+
+  .sport__slider2 {
+    width: 310px;
+    height: 430px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  }
+
+  .sport2__contener1-new {
+    width: 310px;
+    height: 462px;
+    margin: auto;
+    padding-top: 266px;
+  }
+
+  .sport__slider2-wrepper {
+    margin-top: 26px;
+    height: 530px;
+    position: relative;
+  }
+
+  .sport2__contener1-fake {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+
+  .sport__header-basket {
+    background: url(../images/basket3.png) 0 0px no-repeat;
+    background-size: cover;
+    width: 302px;
+    height: 250px;
+    top: 4px;
+    left: 0px;
+  }
+
+  .sport2__contener-litl-new {
+    margin-left: 292px;
+  }
+
+  .connection2-new {
+    margin-left: 56px;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+
+  .bullet2__pagination {
+    margin-top: -36px;
+  }
+
+  .sport__slider2-wrepper-color {
+    background: #f5f4f9;
+    height: 241px;
+    position: absolute;
+    width: 100%;
+    top: 279px;
+  }
+
+  .connection3-new {
+    margin-left: 162px;
+  }
+
+  .connection2 {
+    margin-left: 100px;
+    transform: rotate(0deg);
+  }
+
+  .sport__contener1-text {
+    margin-left: -160px;
+    margin-right: 29px;
+  }
+
+  .sport-text {
+    margin-right: -150px;
+    margin-left: 0px;
+  }
+  .sport__contener1-text-new {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    margin-left: 103px;
+    width: 210px;
+    margin-left: 79px;
+  }
+  .text-new-two{
+    margin-left: 33px;
+  }
+  .text-new-three{
+    margin-left: 160px;
+  }
+  .numbe__one, .number__two{
+    transform: rotateY(-180deg);
+    margin-left: 205px;
+    margin-right: -211px;
+  }
+  .connection3{
+    transform: rotateY(0deg);
+  }
+  .number__two{
+    margin-right: -260px;
+    margin-left: 242px;
+  }
+  .number__three{
+    transform: rotateY(-180deg);
+    margin-left: 205px;
+    margin-right: -129px;
+  }
+  .connection3-new{
+    transform: rotateY(0deg);
+    margin-left: 190px
+  }
+}
+@media (max-width: 500px) {
+  .block__contener-text-block {
+    width: 70px;
+    height: 70px;
+    top: -55px;
+    left: 20px;
+  }
+
+  .block__contener-text-block-revers {
+    top: 296px;
+    left: 20px;
+  }
+
+  .block__contener-text-header {
+    font-size: 28px;
+  }
+
+  .block__contener-text-text {
+    font-size: 15px;
+    margin-left: 20px;
+    min-width: 220px;
+    margin-bottom: 50px;
+  }
+
+  .block__contener-card1 {
+    background: url(../images/card1_3.png) 0 0px no-repeat;
+    background-size: cover;
+    width: 320px;
+    height: 351px;
+    width: 100%;
+  }
+
+  .block__contener-card1-revers {
+    background: url(../images/card2_3.png) 0 0px no-repeat;
+    background-size: cover;
+    width: 320px;
+    height: 351px;
+    width: 100%;
+  }
+
+  .block__contener-card3 {
+    background: url(../images/card3_33.png) 0 0px no-repeat;
+    background-size: cover;
+    width: 320px;
+    height: 351px;
+    width: 100%;
+    margin-top: 55px;
+  }
+
+  .block__contener-text-header {
+    margin-bottom: 14px;
+    margin-left: 20px;
+    margin-top: 30px;
+  }
+
+  .footer {
+    background: url(../images/footer_fon3.png) 0 0px no-repeat;
+    background-size: auto;
+    background-size: auto;
+    background-size: cover;
+    padding-top: 95px;
+  }
+
+  .footer-logo {
+    background: url(../images/footer_logo3.png) 0 0px no-repeat;
+    background-size: auto;
+    background-size: cover;
+    width: 73px;
+    height: 78px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 52px;
+  }
+
+  .foote__top-contener-app-header {
+    font-size: 34px;
+  }
+
+  .foote__top-contener-app-text {
+    font-size: 15px;
+  }
+
+  .contener-app-header-line1 {
+    width: 98px;
+    top: 23px;
+    left: 96px;
+  }
+
+  .contener-app-header-line2 {
+    width: 179px;
+    top: 28px;
+    left: 183px;
+  }
+
+  .foote__top-contener {
+    display: block;
+    margin-bottom: 66px;
+  }
+
+  .footer__fon-contener-btn-contener {
+    margin-bottom: 23px;
+  }
+
+  .footer__bootom-social {
+    margin-top: -16px;
+    margin-bottom: 14px;
+  }
+
+}
+@media (max-width: 360px) {
+  .header__fon-contener-main-line {
+    width: 235px;
+    top: 52px;
+    left: 22px;
+  }
+
+  .fon-contener-main2 {
+    margin-bottom: 192px;
+  }
+
+  .sport__header {
+    text-align: start;
+  }
+
+  .contener-app-header-line1 {
+    left: 30px;
+  }
+
+  .contener-app-header-line2 {
+    left: 127px;
+  }
+}
